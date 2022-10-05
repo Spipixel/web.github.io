@@ -40,7 +40,7 @@ body
 .circle1
 {
     background: linear-gradient(blue, #bf23f6);
-    left: -80px;
+    left: -20px;
     top: -80px;
 }
 
@@ -90,6 +90,7 @@ form h3 span
     font-size: 16px;
     font-weight: 300px;
 }
+
 form h5
 {
     font-size: 15px;
@@ -124,6 +125,12 @@ input
     margin-top: 8px;
     font-size: 15px;
     font-weight: 300px;
+}
+
+.message
+{
+    height: 50px;
+    border-color: #080710;
 }
 
 ::placeholder

@@ -1,0 +1,36 @@
+*, *:before, *:after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #ffffff;
+}
+
+
+.container .circle11, .circle22
+{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle11
+{
+    background: linear-gradient(blue, #bf23f6);
+    left: -80px;
+    top: -110px;
+    size: 10%;
+}
+
+.circle22
+{
+    background: linear-gradient(to right,#fd9307, yellow);
+    right: -50px;
+    bottom: -80px;
+    
+}
