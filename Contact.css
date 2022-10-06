@@ -62,7 +62,7 @@ form
     left: 50%;
     top: 50%;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter:blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
@@ -83,7 +83,10 @@ form h3
     line-height: 42px;
     text-align: center;
 }
-
+form h2
+{
+    height: 30px;
+}
 form h3 span
 {
     display: block;
@@ -126,12 +129,11 @@ input
     font-size: 15px;
     font-weight: 300px;
 }
-
 .message
 {
-    height: 50px;
     border-color: #080710;
 }
+
 
 ::placeholder
 {
@@ -140,7 +142,7 @@ input
 
 button
 {
-    margin-top: 50px;
+    margin-top: 80px;
     width: 100%;
     background-color: white;
     color: black;
@@ -160,18 +162,4 @@ button:hover
 form h5:hover
 {
     color: black;
-}
-.popup
-{
-    width: 400px;
-    height: 400px;
-    background: #fff;
-    border-radius: 6px;
-    padding: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 0 30px 30px;
-    color: #333;
 }
