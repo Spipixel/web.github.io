@@ -40,6 +40,14 @@ form h2
     text-align: center;
     top: -50px;
 }
+form p
+{
+    font-size: 6px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+    top: -50px;
+}
 .container .circle11, .circle22
 {
     height: 200px;
