@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-body
-{
-    background: linear-gradient(#d5c7da, white);
-}
 .button {
     background-color: #04AA6D;
     border: none;
