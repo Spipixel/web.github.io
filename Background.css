@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 .button {
     background-color: #04AA6D;
     border: none;
@@ -17,6 +18,12 @@
     margin: 4px 2px;
   }
   
+  header
+  {
+    background-color: #222;
+    box-shadow: 0 2px 5px;
+  }
+
 .button1
   {
       border-radius: 8px;
