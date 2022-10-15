@@ -391,3 +391,24 @@ button:hover {
 .tooltip:hover .tooltiptext {
   opacity: 1;
 }
+
+
+.latest
+{
+  background-color: #222;
+  margin: 30px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.latest h4
+{
+  color: white;
+  margin-left: 30px;
+}
+
+.latest img
+{
+  width: 25px;
+  float: left;
+}
