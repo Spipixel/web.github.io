@@ -325,26 +325,6 @@ button:hover {
   }
 }
 
-
-
-/* Pagination links */
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-}
-
-/* Style the active/current link */
-.pagination a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-
-/* Add a grey background color on mouse-over */
-.pagination a:hover:not(.active) {background-color: #ddd;}
-
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -397,6 +377,7 @@ button:hover {
 {
   background-color: #222;
   margin: 30px;
+  margin-left: 60px ;
   padding: 5px;
   border-radius: 5px;
 }
@@ -404,7 +385,7 @@ button:hover {
 .latest h4
 {
   color: white;
-  margin-left: 30px;
+  margin-left:30px;
 }
 
 .latest img
@@ -412,3 +393,25 @@ button:hover {
   width: 25px;
   float: left;
 }
+
+.pagination {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 5px;
+  margin-block-end: 20px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
