@@ -1,0 +1,92 @@
+*, *:before, *:after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #080710;
+}
+form
+{
+    width: 500px;
+    height: 600px;
+    background-color: rgba(255,255,255,0.07);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+form *
+{
+    color: white;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h2
+{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+    top: -50px;
+}
+form p
+{
+    font-size: 6px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+    top: -50px;
+}
+.container .circle11, .circle22
+{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle11
+{
+    background: linear-gradient(blue, #bf23f6);
+    left: -40px;
+    top: -80px;
+}
+
+.circle22
+{
+    background: linear-gradient(to right,#fd9307, yellow);
+    right: -50px;
+    bottom: -80px;
+    
+}
+
+form p
+{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+}
+
+form p
+{
+    display: block;
+    font-size: 16px;
+    font-weight: 300px;
+}
+
+form p:hover
+{
+    color: rgba(255, 0, 0, 0.26);
+}

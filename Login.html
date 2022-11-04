@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.1.css">
+    <link rel="icon" type="image/x-icon" href="./ico/name.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+    <form method="post" name="google-sheet" action="action.php" >
+        <h3>Welcome
+            <span> Please LogIn to your account</span>
+        </h3>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter email" id="email" name="Email" required>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter password" id="password" name="Password" required>
+
+        <button>Login</button>
+        <p>To Back In <a href="index.html">Home</a></p>
+    </form>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyH00HDlB1bArBqUhXzRvyH-W158sB1vr6vUYm2uNXTtoAmQnbuMhSKibKQS0UYluXmkw/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Welcome back but isn't working properly so your profile is not be created on this site or your data sote in our database"))
+            .catch(error => console.error('Error!', error.message))
+        })
+</script>    
+</body>
+</html>
