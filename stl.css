@@ -80,7 +80,7 @@ body {
   
   .navbar {
     overflow: hidden;
-    background-color: #222;
+    
   }
   
   .navbar a {
@@ -91,11 +91,18 @@ body {
     padding: 14px 16px;
     text-decoration: none;
   }
+
+  .navbar a:hover
+  {
+    color: #333;
+    background-color: rgba(51, 51, 51, 0.329);
+  }
   
   .dropdown {
     float: left;
     overflow: hidden;
   }
+
   
   .dropdown .dropbtn {
     font-size: 16px;  
@@ -108,8 +115,15 @@ body {
     margin: 0;
   }
   
+  .navbar .dropdown .dropbtn
+  {
+    color: black;
+  }
+  
+
   .navbar a:hover, .dropdown:hover .dropbtn {
     border-radius: 10px;
+    background-color: rgba(51, 51, 51, 0.329);
   }
   
   .dropdown-content {
@@ -131,11 +145,12 @@ body {
   }
   
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: rgba(51, 51, 51, 0.329);
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
+    border-radius: 2px;
   }
 
   .category-name, .page-meta a, .page-title {

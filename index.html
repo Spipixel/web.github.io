@@ -12,7 +12,62 @@
     <link rel="stylesheet" type="text/css" href="stl.css">
     <link rel="stylesheet" type="text/css" href="Background.css">
 </head>
-<body onload="checkCookie()">
+<style>
+  body {margin:0;height:2000px;}
+  
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .content {
+    margin-left: 75px;
+    font-size: 30px;
+  }
+  </style>
+<body>
+
   <header class="text-black-600 body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -21,13 +76,12 @@
         </svg>
         <span class=" text-blue-500 font-bold ml-3 text-xl">Spipixel</span>
       </a>
-      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-Black-400	flex flex-wrap items-center text-base justify-center">
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l	flex flex-wrap items-center text-base justify-center">
         <div class="navbar">
-            <a class="mr-5 hover:text-gray-900" style="color: white; font-weight: 500;" href="index.html">Home</a>
-            <a class="mr-5 hover:text-gray-900" style="color: white; font-weight: 500" href="Movies.html">Movies</a>
-            <a class="mr-5 hover:text-gray-900" style="color: white; font-weight: 500" href="Shop.html">Shop</a>
-            <a class="mr-5 hover:text-gray-900" style="color: white; font-weight: 500" href="Blog.html">Blog</a>
-            <a class="mr-5 hover:text-gray-900" style="color: white; font-weight: 500" href="About.html">About</a>
+            <a class="mr-5 hover:text-gray-900" style=" border-radius: 15px; background-color: #48aad8; color: black;  font-weight: 500;" href="index.html">Home</a>
+            <a class="mr-5 hover:text-gray-900" style=" color: black;  font-weight: 500" href="Shop.html">Shop</a>
+            <a class="mr-5 hover:text-gray-900" style=" color: black;  font-weight: 500" href="Blog.html">Blog</a>
+            <a class="mr-5 hover:text-gray-900" style=" color: black;  font-weight: 500" href="About.html">About</a>
         </div>
         <div class="navbar">
             <div class="dropdown">
@@ -44,6 +98,15 @@
       </nav>
     </div>
   </header>
+
+
+  <div class="icon-bar">
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+    <a href="#" class="google"><i class="fa fa-google"></i></a> 
+    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+  </div>
 
       <section class="text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -64,6 +127,8 @@
           </div>
         </div>
       </section>
+    
+
 <form>
     <section class="text-gray-600 body-font overflow-hidden">
         <div class="container px-5 py-24 mx-auto">
@@ -125,7 +190,7 @@
       <div class="callout-header">Spipixel</div>
       <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
       <div class="callout-container">
-        <p>This website is created by one person i Hope you like it</p>
+        <p>if you want join our minecraft server -<p style=" font-weight: 100px; font-size: 18px;">spipixelnetwork.tk , <a style="color: blue;" href="Learn-More.html">Learn More</a> </p></p>
       </div>
     </div>
 
@@ -223,42 +288,6 @@
         </div>
       </footer>
 
-      <script>
-        function setCookie(cname,cvalue,exdays) {
-          const d = new Date();
-          d.setTime(d.getTime() + (exdays*24*60*60*1000));
-          let expires = "expires=" + d.toUTCString();
-          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-        }
-        
-        function getCookie(cname) {
-          let name = cname + "=";
-          let decodedCookie = decodeURIComponent(document.cookie);
-          let ca = decodedCookie.split(';');
-          for(let i = 0; i < ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) == ' ') {
-              c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-              return c.substring(name.length, c.length);
-            }
-          }
-          return "";
-        }
-        
-        function checkCookie() {
-          let user = getCookie("username");
-          if (user != "") {
-            alert("Welcome again " + user);
-          } else {
-             user = prompt("Please enter your name:","");
-             if (user != "" && user != null) {
-               setCookie("username", user, 30);
-             }
-          }
-        }
-        </script>
 
 </body>
 </html>
