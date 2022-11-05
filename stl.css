@@ -430,3 +430,25 @@ button:hover {
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+.server-info
+{
+  margin: 10px;
+  background-color: rgba(226, 226, 226, 0.349);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 1000px;
+}
+
+.server-info h1
+{
+  font-size: 28px;
+  margin-block-end: 5px;
+  font-weight: 100px;
+}
+
+.server-info p
+{
+  color: rgb(94, 94, 94);
+}
