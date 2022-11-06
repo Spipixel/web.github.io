@@ -78,3 +78,15 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .navbar .flex-div{
+    display: flex;
+    align-items: center;
+  }
+  .navbar img{
+    width: 25px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
