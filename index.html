@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="stl.css">
     <link rel="stylesheet" type="text/css" href="Background.css">
+    <link rel="stylesheet" href="./CSS/loader.css">
 
 </head>
 <style>
-  
+
   .icon-bar {
     position: fixed;
     top: 50%;
@@ -116,10 +117,13 @@ hr {
   margin: auto;
   width: 40%;
 }
-  </style>
-<body>
 
-  <header class="text-black-600 body-font disp">
+
+  </style>
+
+<body onload="myFunction()" style="overflow-x: hidden; margin:0;">
+
+  <header  style="margin: 0;" class="prevent-select text-black-600 body-font disp">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <div>
         <img src="./Images/logo.png" alt="">
@@ -127,7 +131,7 @@ hr {
       <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l	flex flex-wrap items-center text-base justify-center">
         <div class="navbar flex-div">
           <img src="./Images/home.png" alt="">
-            <a class="mr-5 hover:bg-indigo-600 " style=" border-radius: 15px; background-color: #48aad8; color: black;  font-weight: 500;" href="index.html">Home</a>
+            <a  class="mr-5 hover:bg-indigo-600 " style=" border-radius: 15px; background-color: #48aad8; color: black;  font-weight: 500;" href="https://spipxiel.tk">Home</a>
           <img src="./Images/shop.png" alt="">
             <a class="mr-5 hover:text-gray-900" style=" transition: 0.2s; color: black;  font-weight: 500" href="Shop.html">Shop</a>
           <img src="./Images/Blog.png" alt="">
@@ -153,271 +157,196 @@ hr {
     </div>
   </header>
 
+<div id="loader"></div>
 
 
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  
 
-      <section class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="object-cover object-center rounded" src="./Images/Youtube.jpg" alt="Youtube" >
-          </div>
-          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Youtube Contents
-              <br class="hidden lg:inline-block">tutorial video on this channel
-            </h1>
-            <p class="mb-8 leading-relaxed">I hope this video tutorial is helpful for you , i cover C , Python or HTML Content I will try to cover more contents in future</p>
-            <div class="flex justify-center">
-              <div class="tooltip">
-                <button style="transition: 0.2s;" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="VideoPage.html">View pages</a></button>
-                <span class="tooltiptext"> You can Watch Videos form this website </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-
-      <div class="bgimg">
-        <div class="topleft">
-          <p>Spipixel</p>
-        </div>
-        <div class="middle">
-          <h1>COMING SOON</h1>
-          <hr>
-          <p id="demo" style="font-size:30px"></p>
-        </div>
-        <div class="bottomleft">
-          <p>Special Feature</p>
-        </div>
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="prevent-select object-cover object-center rounded" src="./Images/Youtube.jpg" alt="Youtube" >
       </div>
-
-<form>
-    <section class="text-gray-600 body-font overflow-hidden">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="-my-8 divide-y-2 divide-gray-100">
-              <div style="box-shadow: 2px 2px 5px rgba(0,0,0,0.2); background: #f3f3f3; padding: 20px; border-radius: 20px; margin: 10px; margin-top: 20px;" class="py-8 flex flex-wrap md:flex-nowrap">
-                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                  <span class="font-semibold title-font text-gray-700">Science</span>
-                  <span class="mt-1 text-gray-500 text-sm">10/5/2022</span>
-                </div>
-                <div class="md:flex-grow">
-                  <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">All Chapters notes of CBSE Science Free Download From Here</h2>
-                  <p class="leading-relaxed">This Page you can find all Chapters of Science notes </p>
-                  <a class="text-indigo-500 inline-flex items-center mt-4"><p style="cursor: pointer;" id="Esdesae123" onclick="science()">Download</p>
-                    <svg class="w-4 h-4 ml-2" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            <div style="box-shadow: 2px 2px 5px rgba(0,0,0,0.2); background: #f3f3f3; padding: 20px; border-radius: 20px; margin: 10px;" class="py-8 flex flex-wrap md:flex-nowrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="font-semibold title-font text-gray-700">Maths</span>
-                <span class="mt-1 text-gray-500 text-sm">10/5/2022</span>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">All Chapters notes of CBSE Maths Free Download From Here</h2>
-                <p class="leading-relaxed">This Page you can find all Chapters of Maths notes</p>
-                <a class="text-indigo-500 inline-flex items-center mt-4"><p style="cursor: pointer;" id="3rx1w3d" onclick="math()">Download</p>
-                  <svg class="w-4 h-4 ml-2" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div style="box-shadow: 2px 2px 5px rgba(0,0,0,0.2); background: #f3f3f3; padding: 20px; border-radius: 20px; margin: 10px; margin-block-end: 30px;" class="py-8 flex flex-wrap md:flex-nowrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="font-semibold title-font text-gray-700">Social Sciencs</span>
-                <span class="text-sm text-gray-500">10/5/2022</span>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">All Chapters notes of CBSE Social Science Free Download From Here</h2>
-                <p class="leading-relaxed">This Page you can find all Chapters of Social Science notes</p>
-                <a href="spipixel.tk" target="blank" class="text-indigo-500 inline-flex items-center mt-4"><p style="cursor: pointer;" id="vfs23ess" onclick="sscience()">Download</p>
-                  <svg class="w-4 h-4 ml-2" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Youtube Contents
+          <br class="hidden lg:inline-block">tutorial video on this channel
+        </h1>
+        <p class="mb-8 leading-relaxed">I hope this video tutorial is helpful for you , i cover C , Python or HTML Content I will try to cover more contents in future</p>
+        <div class="flex justify-center">
+          <div class="tooltip">
+            <button style="transition: 0.2s;" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="VideoPage.html">View pages</a></button>
+            <span class="tooltiptext"> You can Watch Videos form this website </span>
           </div>
         </div>
-      </section>
-    </form>
-
-    <div class="callout">
-      <div class="callout-header">Spipixel</div>
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-      <div class="callout-container">
-        <p>Cirtificates of my Achievement from free online course  <button onclick="document.location.href='./Cirtificates/python.html'" style="background: black; border-radius: 7px; padding: 5px; width: 100px; margin-left: 10px;" class="w3-button w3-round-large"><a href="./Cirtificates/python.html">View</a></button> </p>
       </div>
     </div>
+  </section>
 
 
-    <hr style="padding: 0; margin-top: 10px; background: none; margin: 10px; background-color: none;">
 
-      <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewbox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+<form>
+<section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="-my-8 divide-y-2 divide-gray-100">
+          <div style="box-shadow: 2px 2px 5px rgba(0,0,0,0.2); background: #f3f3f3; padding: 20px; border-radius: 20px; margin: 10px; margin-top: 20px;" class="py-8 flex flex-wrap md:flex-nowrap">
+            <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <span class="font-semibold title-font text-gray-700">Science</span>
+              <span class="mt-1 text-gray-500 text-sm">10/5/2022</span>
+            </div>
+            <div class="md:flex-grow">
+              <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">All Chapters notes of CBSE Science Free Download From Here</h2>
+              <p class="leading-relaxed">This Page you can find all Chapters of Science notes </p>
+              <a class="text-indigo-500 inline-flex items-center mt-4"><p style="cursor: pointer;" id="Esdesae123" onclick="science()">Download</p>
+                <svg class="w-4 h-4 ml-2" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        <div style="box-shadow: 2px 2px 5px rgba(0,0,0,0.2); background: #f3f3f3; padding: 20px; border-radius: 20px; margin: 10px;" class="py-8 flex flex-wrap md:flex-nowrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="font-semibold title-font text-gray-700">Maths</span>
+            <span class="mt-1 text-gray-500 text-sm">10/5/2022</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">All Chapters notes of CBSE Maths Free Download From Here</h2>
+            <p class="leading-relaxed">This Page you can find all Chapters of Maths notes</p>
+            <a class="text-indigo-500 inline-flex items-center mt-4"><p style="cursor: pointer;" id="3rx1w3d" onclick="math()">Download</p>
+              <svg class="w-4 h-4 ml-2" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
               </svg>
-              <span class="ml-3 text-xl"><a href="index.html">Spipixel</a></span>
             </a>
-            <p class="mt-2 text-sm text-gray-500"><a href="About.html">About</a></p>
-          </div>
-          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Social Media</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a href="https://www.youtube.com/channel/UC3P1GCUicXUjYcbtvrFrC0A" class="text-gray-600 hover:text-gray-800">Youtube</a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/spipixel12/" class="text-gray-600 hover:text-gray-800">Instagram</a>
-                </li>
-                <li>
-                  <a href="Error Page.html" class="text-gray-600 hover:text-gray-800">Facebook</a>
-                </li>
-                <li>
-                  <a href="About.html" class="text-gray-600 hover:text-gray-800">About</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a href="index.html" class="text-gray-600 hover:text-gray-800">Home</a>
-                </li>
-                <li>
-                  <a href="Contact.css" class="text-gray-600 hover:text-gray-800">Contact</a>
-                </li>
-                <li>
-                  <a href="Shop.html" class="text-gray-600 hover:text-gray-800">Shop</a>
-                </li>
-                <li>
-                  <a href="About.html" class="text-gray-600 hover:text-gray-800">About</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Team</h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a href="" class="text-gray-600 hover:text-gray-800">Spipixel</a>
-                </li>
-                <li>
-                  <a href="" class="text-gray-600 hover:text-gray-800">Hyper8107</a>
-                </li>
-              </nav>
-            </div>
           </div>
         </div>
-        <div class="bg-gray-100">
-          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-gray-500 text-sm text-center sm:text-left">© 2022-23 Spipixel —
-              <a onclick="document.location='Error Page.html'" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Spipixel</a>
-            </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <a onclick="document.location='Error Page.html'" class="text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewbox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a href="https://twitter.com/AyushTr82343206" class="ml-3 text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewbox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a href="https://www.instagram.com/spipixel12/" class="ml-3 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewbox="0 0 24 24">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </a>
-            </span>
+        <div style="box-shadow: 2px 2px 5px rgba(0,0,0,0.2); background: #f3f3f3; padding: 20px; border-radius: 20px; margin: 10px; margin-block-end: 30px;" class="py-8 flex flex-wrap md:flex-nowrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="font-semibold title-font text-gray-700">Social Sciencs</span>
+            <span class="text-sm text-gray-500">10/5/2022</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">All Chapters notes of CBSE Social Science Free Download From Here</h2>
+            <p class="leading-relaxed">This Page you can find all Chapters of Social Science notes</p>
+            <a href="spipixel.tk" target="blank" class="text-indigo-500 inline-flex items-center mt-4"><p style="cursor: pointer;" id="vfs23ess" onclick="sscience()">Download</p>
+              <svg class="w-4 h-4 ml-2" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+  </section>
+</form>
+
+<div class="prevent-select callout">
+  <div class="callout-header">Spipixel</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <div class="callout-container">
+    <p>Cirtificates of my Achievement from free online course  <button onclick="document.location.href='./Cirtificates/python.html'" style="background: black; border-radius: 7px; padding: 5px; width: 100px; margin-left: 10px;" class="w3-button w3-round-large"><a href="./Cirtificates/python.html">View</a></button> </p>
+  </div>
+</div>
 
 
-      <script src="./Component/js/event.js"></script>
+<hr style="padding: 0; margin-top: 10px; background: none; margin: 10px; background-color: none;">
 
-      <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Dec 15, 2022 15:37:25").getTime();
-        
-        // Update the count down every 1 second
-        var countdownfunction = setInterval(function() {
-        
-          // Get todays date and time
-          var now = new Date().getTime();
-          
-          // Find the distance between now an the count down date
-          var distance = countDownDate - now;
-          
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-          
-          // Output the result in an element with id="demo"
-          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-          
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(countdownfunction);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
-        }, 1000);
-        </script>
+  <footer class="prevent-select text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewbox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl"><a href="index.html">Spipixel</a></span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500"><a href="About.html">About</a></p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Social Media</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="https://www.youtube.com/channel/UC3P1GCUicXUjYcbtvrFrC0A" class="text-gray-600 hover:text-gray-800">Youtube</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/spipixel12/" class="text-gray-600 hover:text-gray-800">Instagram</a>
+            </li>
+            <li>
+              <a href="Error Page.html" class="text-gray-600 hover:text-gray-800">Facebook</a>
+            </li>
+            <li>
+              <a href="About.html" class="text-gray-600 hover:text-gray-800">About</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="index.html" class="text-gray-600 hover:text-gray-800">Home</a>
+            </li>
+            <li>
+              <a href="Contact.css" class="text-gray-600 hover:text-gray-800">Contact</a>
+            </li>
+            <li>
+              <a href="Shop.html" class="text-gray-600 hover:text-gray-800">Shop</a>
+            </li>
+            <li>
+              <a href="About.html" class="text-gray-600 hover:text-gray-800">About</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Team</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="" class="text-gray-600 hover:text-gray-800">Spipixel</a>
+            </li>
+            <li>
+              <a href="" class="text-gray-600 hover:text-gray-800">Hyper8107</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2022-23 Spipixel —
+          <a onclick="document.location='Error Page.html'" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Spipixel</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a onclick="document.location='Error Page.html'" class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewbox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://twitter.com/AyushTr82343206" class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewbox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/spipixel12/" class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewbox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</div>
 
-        <script>
 
-          function showNotification() {
-            const notification = new Notification("Spipixel", {
-              body: "You allowed notfication permission ",
-              icon: "./ico/name.ico"
-            });
+<script src="./Component/js/event.js"></script>
+<script src="./JS/Loader.js"></script>
+<script src="./JS/notification.js"></script>
 
-            notification.onclick = (e) => {
-              window.location.href = "https://spipixel.tk/";
-            };
-          }
-          function newNotification() {
-            const notification = new Notification("Spipixel", {
-              body: "A new feature is coming in 14 Dec 2022 remember to check it out in 14 Dec",
-              icon: "./ico/name.ico"
-            });
-            
-            notification.onclick = (e) => {
-              window.location.href = "https://spipixel.tk/";
-            };
-          }
-          
-          console.log(Notification.permission);
 
-          if (Notification.permission === "granted") {
-            showNotification();
-            newNotification();
-          }
-          else if (Notification.permission !== "denied") {
-            Notification.requestPermission().then(permission => {
-              if (permission === "granted") {
-                showNotification();
-                newNotification();
-              }
-              
-            });
-          }
-        </script>
+
 
 </body>
 </html>
